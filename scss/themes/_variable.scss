@@ -1,0 +1,51 @@
+//-------------bg:css cho màu background-------- */
+$bg-c1-primary: #b61984;
+$bg-c1-light: #fff;
+$bg-c1-violet: #dcd1f3;
+$bg-transparent: rgba(0, 0, 0, 0);
+$bg-none: none;
+
+/*-----text: css cho text ---------*/
+//text-color: màu của text
+$text-c1-primary: #b61984;
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+//text-size
+$text-xs: 13px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+$text-7xl: 70px;
+//text-font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+
+
+//@include(include): Dùng để format truyền động giá trị cho các thuộc tính css
+//@extend: Định nghĩa trước các class css có thể tái sử dụng 
+@mixin text ($fs: $text-xs, $fw: $text-semibold, $c: $text-c1-dark) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin button($fs, $fw, $c, $bg, $pd, $bd, $br, $bg-hover, $c-hover, $bd-hover) {
+    @include text($fs, $fw , $c );
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+
+    &:hover {
+        background: $bg-hover;
+        color: $c-hover;
+        border: $bd-hover;
+    }
+}
