@@ -2,7 +2,11 @@
 $bg-c1-primary: #b61984;
 $bg-c1-light: #fff;
 $bg-c1-violet: #dcd1f3;
-$bg-transparent: rgba(0, 0, 0, 0);
+$bg-transparent: #000000;
+$bg-c1-gray: #CCCCCC;
+$bg-c1-img:#F8F8F8;
+$bg-c1-number:linear-gradient(180deg, #6181F3, #7C97F5);
+$bg-c1-buy: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 $bg-none: none;
 
 /*-----text: css cho text ---------*/
@@ -10,9 +14,19 @@ $bg-none: none;
 $text-c1-primary: #b61984;
 $text-c1-dark: #000;
 $text-c1-light: #fff;
+$text-c2-primary: #F6F6F6;
+$text-c3-primary: #140101;
+$text-c4-primary: #1ED90E;
+$text-c5-primary: #1E1D1D;
+$text-c6-primary: #FC0303;
+$text-c7-primary:#FFFCFC;
+$text-c8-primary:#FFF8F8;
+
+
 //text-size
 $text-xs: 13px;
 $text-base: 16px;
+$text-med: 24px;
 $text-xl: 18px;
 $text-2xl: 20px;
 $text-3xl: 30px;
@@ -23,8 +37,11 @@ $text-7xl: 70px;
 //text-font-weight
 $text-light: 300;
 $text-regular: 400;
-$text-semibold: 600;
-$text-bold: 700;
+$text-semibold: 500;
+$text-bold: 600;
+//border
+$bd-none: none;
+
 
 
 //@include(include): Dùng để format truyền động giá trị cho các thuộc tính css
@@ -47,5 +64,35 @@ $text-bold: 700;
         background: $bg-hover;
         color: $c-hover;
         border: $bd-hover;
+    }
+}
+
+@mixin header-box($top, $bottom, $left, $width, $height) {
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+
+@mixin header-hover ($fc, $fb) {
+    &::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $fb;
+        bottom: -3px;
+        left: 0;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: $text-c1-primary;
+
+        &::before {
+            transform: scale(1, 1);
+        }
     }
 }
