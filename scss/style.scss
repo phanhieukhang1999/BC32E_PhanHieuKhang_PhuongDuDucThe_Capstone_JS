@@ -178,19 +178,20 @@ header {
             position: absolute;
             @include header-box (58px, 117px, 65px, 334px, 355px);
             background-color: $bg-c1-img;
+
             .img-frame {
                 position: relative;
 
                 img {
                     position: absolute;
-                    @include header-box (109px, 90px, 57px, 220px, 156px);
+                    @include header-box (109px, 90px, 57px, 220px, 190px);
                 }
             }
         }
 
         .detail-right {
             .title {
-                @include header-box (67px, 427px, 527px, 220px, 50px);
+                @include header-box (67px, 427px, 527px, 500px, 50px);
                 position: absolute;
 
                 p {
@@ -248,13 +249,14 @@ header {
                 input {
                     position: absolute;
                     border: none;
-                    @include header-box(377px, 117px, 597px, 14px, 36px);
+                    @include header-box(377px, 117px, 590px, 80px, 36px);
                     @include text($text-3xl, $text-semibold, $text-c1-dark);
+                    text-align: center;
                 }
 
                 button.down {
                     position: absolute;
-                    @include header-box(370px, 110px, 636px, 50px, 50px);
+                    @include header-box(370px, 110px, 680px, 50px, 50px);
                     background: $bg-c1-number;
                     border: $bd-none;
                     @include text ($text-3xl, $text-regular, $text-c7-primary);
@@ -266,9 +268,116 @@ header {
                 @include header-box(427px, 39px, 527px, 175px, 64px);
 
                 button {
+                    width: 92%;
                     @include button($text-med, $text-semibold, $text-c8-primary, $bg-c1-buy, 18px 9px 16px 9px, $bd-none, none, $bg-c1-primary, $text-c1-light, $bd-none);
                 }
             }
         }
     }
+}
+
+.related-product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .container {
+        .title {
+            margin-bottom: 89px;
+
+            p {
+                text-align: center;
+                @include text($text-4xl, $text-regular, $text-c1-dark);
+            }
+        }
+
+        .line1 {
+            // position: absolute;
+            // top: 153px;
+            // left: 99px;
+            align-items: center;
+            justify-content: center;
+
+            .cell {
+                width: 334px;
+                // height: 369px;
+                padding: 0;
+                position: relative;
+
+                // &.item1 {
+                //     margin-right: 60px;
+                // }
+
+                // &.item2 {
+                //     margin-right: 87px;
+                // }
+
+                .card-top {
+                    height: 410px;
+                    background-color: $bg-c1-img;
+
+                    img {
+                        position: absolute;
+                        @include header-box (45px, 168px, 57px, 220px, 185px);
+                    }
+
+                    #name {
+                        position: absolute;
+                        @include header-box (231px, 109px, 23px, 90%, 29px);
+                        @include text ($text-med, $text-light, $text-c1-dark);
+                    }
+
+                    #shortDescription {
+                        margin-top: 2.5rem;
+                        margin-bottom: 2.5rem;
+                        position: absolute;
+                        @include header-box (268px, 77px, 23px, 90%, 29px);
+                        @include text ($text-2xl, $text-light, $text-c9-primary);
+                    }
+                }
+
+                .card-bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .cell-left {
+                        width: 50%;
+                        background-color: $bg-card-left;
+                        height: 65px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        a {
+                            text-decoration: none;
+
+                            button {
+                                background: transparent;
+                                border: none;
+                                @include button($text-med, $text-bold, $text-c5-primary, $bg-none, 10px, $bd-none, none, $bg-none, $text-c1-light, $bd-none);
+                            }
+                        }
+                        
+                    }
+
+                    .cell-right {
+                        width: 50%;
+                        height: 65px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $bg-card-right;
+
+                        span {
+                            @include text ($text-med, $text-bold, $text-c1-dark);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.footer{
+    margin-top: 106px;
 }

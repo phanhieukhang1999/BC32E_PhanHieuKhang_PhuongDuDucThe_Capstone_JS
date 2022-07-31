@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--FAVICON-->
-    <!-- <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
     <!--FONT STYLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,219 +22,251 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="header-left">
-                    <a id="logo" href="#">
-                        <img src="../assets/img/logo.png" alt="" width="116" height="32" />
-                    </a>
-                </div>
-                <div class="header-right">
-                    <a href="#" id="buy">
-                        <img src="../assets/img/buy.png" alt="" width="31" height="31" />
-                    </a>
-                    <a href="#" id="qty">
-                        <span>
-                            (1)
-                        </span>
-                    </a>
-                    <a href="#" id="login">
-                        <span>Login</span>
-                    </a>
-                    <a href="#" id="register">
-                        <span>Register</span>
-                    </a>
-                </div>
-            </nav>
-            <div class="menu">
-                <div class="menu-inner">
-                    <a href="#" id="active">
-                        <span>Home</span>
-                    </a>
-                    <a href="#" id="men">
-                        <span>Men</span>
-                    </a>
-                    <a href="#" id="woman">
-                        <span>Woman</span>
-                    </a>
-                    <a href="#" id="kid">
-                        <span>Kid</span>
-                    </a>
-                    <a href="#" id="sport">
-                        <span>Sport</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="product-detail">
-        <div class="container">
-            <div class="detail-left">
-                <div class="img-frame">
-                    <img id="image" src="../assets/img/product.png" alt="" width="220" height="156">
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="header-left">
+                        <a id="logo" href="#">
+                            <img src="../assets/img/logo.png" alt="" width="116" height="32" />
+                        </a>
+                    </div>
+                    <div class="header-right">
+                        <a href="#" id="buy">
+                            <img src="../assets/img/buy.png" alt="" width="31" height="31" />
+                        </a>
+                        <a href="#" id="qty">
+                            <span>
+                                (1)
+                            </span>
+                        </a>
+                        <a href="#" id="login">
+                            <span>Login</span>
+                        </a>
+                        <a href="#" id="register">
+                            <span>Register</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="menu">
+                    <div class="menu-inner">
+                        <a href="#" id="active">
+                            <span>Home</span>
+                        </a>
+                        <a href="#" id="men">
+                            <span>Men</span>
+                        </a>
+                        <a href="#" id="woman">
+                            <span>Woman</span>
+                        </a>
+                        <a href="#" id="kid">
+                            <span>Kid</span>
+                        </a>
+                        <a href="#" id="sport">
+                            <span>Sport</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="detail-right">
+        </header>
+        <section class="product-detail">
+            <div class="container">
+                <div class="detail-left">
+                    <div class="img-frame">
+                        <img id="image" src="../assets/img/product.png" alt="" width="220" height="156">
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="title">
+                        <p id="name">Product Name</p>
+                    </div>
+                    <p class="des" id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        pariatur sequi esse
+                        ducimus veritatis aspernatur totam inventore, tempore rem impedit illum qui a quae aperiam
+                        officiis,
+                        error repellat sunt nulla! </p>
+                    <div class="size">
+                        <p>Available size</p>
+                        <div class="option" id="btnSize">
+                            <button>
+                                <span id="size-0"></span>
+                            </button>
+                            <button>
+                                <span id="size-1"></span>
+                            </button>
+                            <button>
+                                <span id="size-2"></span>
+                            </button>
+                            <button>
+                                <span id="size-3"></span>
+                            </button>
+                            <button>
+                                <span id="size-4"></span>
+                            </button>
+                            <button>
+                                <span id="size-5"></span>
+                            </button>
+                            <button>
+                                <span id="size-6"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p id="price">85</p>
+                    <div class="group-input">
+                        <button class="disable up">+</button>
+                        <input type="text" class="input" id="quantity">
+                        <button class="down">-</button>
+                    </div>
+                    <div class="group-button">
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-product">
+            <div class="container">
                 <div class="title">
-                    <p id="name">Product Name</p>
+                    <p>-Related Product-</p>
                 </div>
-                <p class="des" id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-                    pariatur sequi esse
-                    ducimus veritatis aspernatur totam inventore, tempore rem impedit illum qui a quae aperiam officiis,
-                    error repellat sunt nulla! </p>
-                <div class="size">
-                    <p>Available size</p>
-                    <div class="option">
-                        <button id="size">
-                            <span>36</span>
-                        </button>
-                        <button id="size">
-                            <span>37</span>
-                        </button>
-                        <button id="size">
-                            <span>38</span>
-                        </button>
-                        <button id="size">
-                            <span>39</span>
-                        </button>
-                        <button id="size">
-                            <span>40</span>
-                        </button>
-                        <button id="size">
-                            <span>41</span>
-                        </button>
-                        <button id="size">
-                            <span>42</span>
-                        </button>
-                    </div>
-                </div>
-                <p id="price">85</p>
-                <div class="group-input">
-                    <button class="disable up">+</button>
-                    <input type="text" class="input" value="1" id="quantity">
-                    <button class="down">-</button>
-                </div>
-                <div class="group-button">
-                    <button>Add to cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="related-product">
-        <div class="container">
-            <p>-Related Product-</p>
-            <div class="row">
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
+                <div class="row line1">
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="180" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
                         </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
+                        <div class="card-bottom" style="display:flex">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
                         </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
-                        </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
+                        <div class="card-bottom">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="price" src="../assets/img/product.png" alt="" width="220" height="156" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
                         </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
-                        </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
+                        <div class="card-bottom">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card-top">
-                        <img src="../assets/img/product.png" alt="" width="220" height="156" />
-                        <p id="name">Adidas Prophere</p>
-                        <p id="shortDescription">Short Description</p>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="bottom-left">
-                            <a href="#">
-                                <p>Buy now</p>
-                            </a>
+                    <div class=" cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
                         </div>
-                        <div class="bottom-right">
-                            <p id="price">85</p>
+                        <div class="card-bottom">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+                        <div class="card-top">
+                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                            <p id="name">Adidas Prophere</p>
+                            <p id="shortDescription">Short Description</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="cell-left">
+                                <a href="#">
+                                    <button>
+                                        <span>
+                                            Buy now
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cell-right">
+                                <span id="price">85</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="footer">
-        <img src="../assets/img/footer.png" alt="" width="1280" height="242" />
-    </section>
+
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="image-wrapper">
+                    <img src="../assets/img/footer.png" alt="" width="1280" height="242" />
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -246,6 +278,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!--AJAX LINK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--MODEL JAVASCRIPT FILE-->
+    <script src="../js/models/product.js"></script>
+    <!--MAIN JAVASCRIPT FILE-->
     <script src="../js/detail.js"></script>
 </body>
 

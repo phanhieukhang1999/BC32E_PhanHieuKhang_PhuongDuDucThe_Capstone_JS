@@ -301,13 +301,13 @@ header .container .menu .menu-inner #sport span:hover::before {
   bottom: 90px;
   left: 57px;
   width: 220px;
-  height: 156px;
+  height: 190px;
 }
 .product-detail .container .detail-right .title {
   top: 67px;
   bottom: 427px;
   left: 527px;
-  width: 220px;
+  width: 500px;
   height: 50px;
   position: absolute;
 }
@@ -398,18 +398,19 @@ header .container .menu .menu-inner #sport span:hover::before {
   border: none;
   top: 377px;
   bottom: 117px;
-  left: 597px;
-  width: 14px;
+  left: 590px;
+  width: 80px;
   height: 36px;
   font-size: 30px;
   font-weight: 500;
   color: #000;
+  text-align: center;
 }
 .product-detail .container .detail-right .group-input button.down {
   position: absolute;
   top: 370px;
   bottom: 110px;
-  left: 636px;
+  left: 680px;
   width: 50px;
   height: 50px;
   background: linear-gradient(180deg, #6181F3, #7C97F5);
@@ -427,6 +428,7 @@ header .container .menu .menu-inner #sport span:hover::before {
   height: 64px;
 }
 .product-detail .container .detail-right .group-button button {
+  width: 92%;
   font-size: 24px;
   font-weight: 500;
   color: #FFF8F8;
@@ -440,4 +442,114 @@ header .container .menu .menu-inner #sport span:hover::before {
   background: #b61984;
   color: #fff;
   border: none;
+}
+
+.related-product {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.related-product .container .title {
+  margin-bottom: 89px;
+}
+.related-product .container .title p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+.related-product .container .line1 {
+  align-items: center;
+  justify-content: center;
+}
+.related-product .container .line1 .cell {
+  width: 334px;
+  padding: 0;
+  position: relative;
+}
+.related-product .container .line1 .cell .card-top {
+  height: 410px;
+  background-color: #F8F8F8;
+}
+.related-product .container .line1 .cell .card-top img {
+  position: absolute;
+  top: 45px;
+  bottom: 168px;
+  left: 57px;
+  width: 220px;
+  height: 185px;
+}
+.related-product .container .line1 .cell .card-top #name {
+  position: absolute;
+  top: 231px;
+  bottom: 109px;
+  left: 23px;
+  width: 90%;
+  height: 29px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+}
+.related-product .container .line1 .cell .card-top #shortDescription {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  top: 268px;
+  bottom: 77px;
+  left: 23px;
+  width: 90%;
+  height: 29px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+}
+.related-product .container .line1 .cell .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.related-product .container .line1 .cell .card-bottom .cell-left {
+  width: 50%;
+  background-color: #E1B067;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.related-product .container .line1 .cell .card-bottom .cell-left a {
+  text-decoration: none;
+}
+.related-product .container .line1 .cell .card-bottom .cell-left a button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1E1D1D;
+  background: none;
+  padding: 10px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+.related-product .container .line1 .cell .card-bottom .cell-left a button:hover {
+  background: none;
+  color: #fff;
+  border: none;
+}
+.related-product .container .line1 .cell .card-bottom .cell-right {
+  width: 50%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEDDDC;
+}
+.related-product .container .line1 .cell .card-bottom .cell-right span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+section.footer {
+  margin-top: 106px;
 }
