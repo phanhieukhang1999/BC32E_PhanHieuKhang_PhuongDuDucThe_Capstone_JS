@@ -1,7 +1,8 @@
 var arrSanPham = [];
+
 function layThongTinSanPhamApi() {
     var promise = axios({
-        url: 'https://shop.cyberlearn.vn/api/Product/getbyid?id=5',
+        url: 'https://shop.cyberlearn.vn/api/Product/getbyid?id=3',
         method: 'GET'
     });
     //Xử lý thành công
@@ -18,7 +19,7 @@ function layThongTinSanPhamApi() {
         //tạo nút Size
         for (index = 0; index < sizeArray.length; index++) {
             html += `
-            <button>
+            <button style="display:flex; align-items:center;justify-content:center;" >
                 <span>${sizeArray[index]}</span>
             </button>
             `;
@@ -29,7 +30,7 @@ function layThongTinSanPhamApi() {
         //tạo related product 
         for (index = 0; index < relatedProduct.length; index++) {
             relatePro += `
-            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
                 <div class="card-top">
                     <img id="image" src="${relatedProduct[index].image}" alt="" width="220" height="180" />
                     <p id="name">${relatedProduct[index].name}</p>
@@ -72,5 +73,8 @@ function renderSanPham(idSanPham) {
 }
 //gọi hàm khi vừa load trang web
 window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('id');
+    console.log('params',myParam);
     layThongTinSanPhamApi();
 }

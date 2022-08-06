@@ -25,29 +25,31 @@
     <div class="container">
         <header class="header">
             <div class="container">
-                <nav class="navbar">
+                <div class="navHeader">
                     <div class="header-left">
                         <a id="logo" href="#">
                             <img src="../assets/img/logo.png" alt="" width="116" height="32" />
                         </a>
                     </div>
                     <div class="header-right">
-                        <a href="#" id="buy">
-                            <img src="../assets/img/buy.png" alt="" width="31" height="31" />
-                        </a>
-                        <a href="#" id="qty">
-                            <span>
-                                (1)
-                            </span>
-                        </a>
-                        <a href="#" id="login">
-                            <span>Login</span>
-                        </a>
-                        <a href="#" id="register">
-                            <span>Register</span>
-                        </a>
+                        <div class="bar">
+                            <a href="#" id="buy">
+                                <img src="../assets/img/buy.png" alt="" width="31" height="31" />
+                            </a>
+                            <a href="#" id="qty">
+                                <span>
+                                    (1)
+                                </span>
+                            </a>
+                            <a href="#" id="login">
+                                <span>Login</span>
+                            </a>
+                            <a href="#" id="register">
+                                <span>Register</span>
+                            </a>
+                        </div>
                     </div>
-                </nav>
+                </div>
                 <div class="menu">
                     <div class="menu-inner">
                         <a href="#" id="active">
@@ -129,129 +131,141 @@
                     <p>-Related Product-</p>
                 </div>
                 <div class="row line1">
-                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="180" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom" style="display:flex">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="image" src="../assets/img/product.png" alt="" width="220" height="180" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
                             </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
+                            <div class="card-bottom" style="display:flex">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="price" src="../assets/img/product.png" alt="" width="220" height="156" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
                             </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
+                            <div class="card-bottom">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="price" src="../assets/img/product.png" alt="" width="220" height="156" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
                             </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
+                            <div class="card-bottom">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5 mr-5">
-                        <div class="card-top">
-                            <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
-                            <p id="name">Adidas Prophere</p>
-                            <p id="shortDescription">Short Description</p>
-                        </div>
-                        <div class="card-bottom">
-                            <div class="cell-left">
-                                <a href="#">
-                                    <button>
-                                        <span>
-                                            Buy now
-                                        </span>
-                                    </button>
-                                </a>
+                    <div class=" cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
                             </div>
-                            <div class="cell-right">
-                                <span id="price">85</span>
+                            <div class="card-bottom">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="cell-wrapper">
+                            <div class="card-top">
+                                <img id="image" src="../assets/img/product.png" alt="" width="220" height="156" />
+                                <p id="name">Adidas Prophere</p>
+                                <p id="shortDescription">Short Description</p>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="cell-left">
+                                    <a href="#">
+                                        <button>
+                                            <span>
+                                                Buy now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="cell-right">
+                                    <span id="price">85</span>
+                                </div>
                             </div>
                         </div>
                     </div>

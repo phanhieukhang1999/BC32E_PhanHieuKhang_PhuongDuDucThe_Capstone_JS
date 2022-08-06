@@ -10,7 +10,11 @@ header {
     .container {
         position: relative;
 
-        .navbar {
+        .navHeader {
+            display: flex;
+            align-items: center;
+            position: relative;
+
             .header-left {
                 position: absolute;
                 @include header-box(10px, 8px, 24px, 0, 0);
@@ -22,44 +26,57 @@ header {
 
             .header-right {
                 display: flex;
-                align-items: center;
+                position: absolute;
+                @include header-box(7px, 7px, 79.84%, 0, 50px);
 
-                #buy {
-                    position: absolute;
-                    @include header-box(10px, 7px, 1022px, 0, 0);
+                .bar {
+                    position: relative;
 
-                    img {}
-                }
+                    #buy {
+                        position: absolute;
+                        @include header-box(0, 0, 0, 31px, 31px);
+                        display: flex;
+                        align-items: center;
 
-                #qty {
-                    text-decoration: none;
-                    position: absolute;
-                    @include header-box (7px, 7px, 1053px, 35px, 36px);
-
-                    span {
-                        @include text($text-3xl, $text-light, $text-c1-light);
+                        img {}
                     }
-                }
 
-                #login {
-                    text-decoration: none;
-                    position: absolute;
-                    @include header-box (15px, 3px, 1103px, 90xp, 32px);
+                    #qty {
+                        text-decoration: none;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        @include header-box (0px, 5px, 31px, 35px, 36px);
 
-                    span {
-                        @include text ($text-base, $text-light, $text-c2-primary);
-                        line-height: 19.36px;
+                        span {
+                            @include text($text-3xl, $text-light, $text-c1-light);
+                        }
                     }
-                }
 
-                #register {
-                    position: absolute;
-                    text-decoration: none;
-                    @include header-box(15px, 3px, 1170px, 90px, 32px);
+                    #login {
+                        text-decoration: none;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        @include header-box (0px, 0px, 81px, 90px, 32px);
 
-                    span {
-                        @include text ($text-base, $text-light, $text-c2-primary);
-                        line-height: 19.36px;
+                        span {
+                            @include text ($text-base, $text-light, $text-c2-primary);
+                            line-height: 19.36px;
+                        }
+                    }
+
+                    #register {
+                        position: absolute;
+                        text-decoration: none;
+                        @include header-box(0px, 0px, 148px, 90px, 32px);
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            @include text ($text-base, $text-light, $text-c2-primary);
+                            line-height: 19.36px;
+                        }
                     }
                 }
             }
@@ -280,6 +297,8 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: $bg-c1-page;
+
     .container {
         .title {
             margin-bottom: 89px;
@@ -299,7 +318,7 @@ header {
 
             .cell {
                 width: 334px;
-                // height: 369px;
+                margin-right: 3.75rem;
                 padding: 0;
                 position: relative;
 
@@ -357,7 +376,7 @@ header {
                                 @include button($text-med, $text-bold, $text-c5-primary, $bg-none, 10px, $bd-none, none, $bg-none, $text-c1-light, $bd-none);
                             }
                         }
-                        
+
                     }
 
                     .cell-right {
@@ -378,6 +397,13 @@ header {
     }
 }
 
-section.footer{
+section.footer {
     margin-top: 106px;
+    .container{
+        .image-wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
 }

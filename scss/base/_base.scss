@@ -1,12 +1,14 @@
 //khai báo cho toàn bộ hệ thống
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
+    max-width: 100%;
 }
 
-.container{
+.container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 0;
