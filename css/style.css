@@ -10,7 +10,9 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 0;
-} /*-----text: css cho text ---------*/
+}
+
+/*-----text: css cho text ---------*/
 header {
   background-color: #000000;
   height: 50px;
@@ -19,33 +21,33 @@ header {
 header .container {
   position: relative;
 }
-header .container .navHeader {
+header .container .navbar {
   display: flex;
   align-items: center;
   position: relative;
+  height: 50px;
 }
-header .container .navHeader .header-left {
+header .container .navbar .header-left {
   position: absolute;
   top: 10px;
   bottom: 8px;
   left: 24px;
-  width: 0;
-  height: 0;
+  width: 116px;
+  height: 32px;
 }
-header .container .navHeader .header-right {
+header .container .navbar .header-right {
   display: flex;
   position: absolute;
   top: 7px;
   bottom: 7px;
-  left: 79.84%;
-  width: 0;
+  left: 1022px;
+  width: 100px;
   height: 50px;
 }
-header .container .navHeader .header-right .bar {
+header .container .navbar .header-right .bar {
   position: relative;
 }
-header .container .navHeader .header-right .bar #buy {
-  position: absolute;
+header .container .navbar .header-right .bar #buy {
   top: 0;
   bottom: 0;
   left: 0;
@@ -54,7 +56,7 @@ header .container .navHeader .header-right .bar #buy {
   display: flex;
   align-items: center;
 }
-header .container .navHeader .header-right .bar #qty {
+header .container .navbar .header-right .bar #qty {
   text-decoration: none;
   position: absolute;
   display: flex;
@@ -65,12 +67,12 @@ header .container .navHeader .header-right .bar #qty {
   width: 35px;
   height: 36px;
 }
-header .container .navHeader .header-right .bar #qty span {
+header .container .navbar .header-right .bar #qty span {
   font-size: 30px;
   font-weight: 300;
   color: #fff;
 }
-header .container .navHeader .header-right .bar #login {
+header .container .navbar .header-right .bar #login {
   text-decoration: none;
   position: absolute;
   display: flex;
@@ -81,13 +83,13 @@ header .container .navHeader .header-right .bar #login {
   width: 90px;
   height: 32px;
 }
-header .container .navHeader .header-right .bar #login span {
+header .container .navbar .header-right .bar #login span {
   font-size: 16px;
   font-weight: 300;
   color: #F6F6F6;
   line-height: 19.36px;
 }
-header .container .navHeader .header-right .bar #register {
+header .container .navbar .header-right .bar #register {
   position: absolute;
   text-decoration: none;
   top: 0px;
@@ -98,7 +100,7 @@ header .container .navHeader .header-right .bar #register {
   display: flex;
   align-items: center;
 }
-header .container .navHeader .header-right .bar #register span {
+header .container .navbar .header-right .bar #register span {
   font-size: 16px;
   font-weight: 300;
   color: #F6F6F6;
@@ -302,6 +304,7 @@ header .container .menu .menu-inner #sport span:hover::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .product-detail .container .detail-left {
   position: absolute;
@@ -367,11 +370,11 @@ header .container .menu .menu-inner #sport span:hover::before {
   top: 261px;
   bottom: 240px;
   left: 536px;
-  width: 32px;
+  width: 400px;
   height: 29px;
 }
 .product-detail .container .detail-right .size .option button {
-  margin-left: 39px;
+  margin-right: 22px;
   width: 50px;
   height: 50px;
   transition: all 0.5s ease;

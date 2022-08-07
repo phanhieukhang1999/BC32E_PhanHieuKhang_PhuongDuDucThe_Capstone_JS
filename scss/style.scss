@@ -10,14 +10,14 @@ header {
     .container {
         position: relative;
 
-        .navHeader {
+        .navbar {
             display: flex;
             align-items: center;
             position: relative;
-
+            height: 50px;
             .header-left {
                 position: absolute;
-                @include header-box(10px, 8px, 24px, 0, 0);
+                @include header-box(10px, 8px, 24px, 116px, 32px);
 
                 #logo {
                     img {}
@@ -27,13 +27,13 @@ header {
             .header-right {
                 display: flex;
                 position: absolute;
-                @include header-box(7px, 7px, 79.84%, 0, 50px);
+                @include header-box(7px, 7px, 1022px, 100px, 50px);
 
                 .bar {
                     position: relative;
 
                     #buy {
-                        position: absolute;
+                        // position: absolute;
                         @include header-box(0, 0, 0, 31px, 31px);
                         display: flex;
                         align-items: center;
@@ -190,6 +190,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
 
         .detail-left {
             position: absolute;
@@ -235,10 +236,10 @@ header {
                 .option {
                     position: absolute;
                     display: flex;
-                    @include header-box (261px, 240px, 536px, 32px, 29px);
+                    @include header-box (261px, 240px, 536px, 400px, 29px);
 
                     button {
-                        margin-left: 39px;
+                        margin-right: 22px;
                         width: 50px;
                         height: 50px;
                         transition: all 0.5s ease;
