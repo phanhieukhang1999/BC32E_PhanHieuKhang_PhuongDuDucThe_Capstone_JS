@@ -481,6 +481,7 @@ body {
   height: 538px;
 }
 .Register .container .row .col-6 {
+  margin-bottom: 2rem !important;
   padding: 0;
 }
 .Register .container .row .col-6 .input-1 {
@@ -521,7 +522,13 @@ body {
   width: 482px;
   background-color: #ae18e2;
 }
+.Register .container .row .col-6 .input1 {
+  position: absolute;
+  left: 50px !important;
+  top: 3rem !important;
+}
 .Register .container .row .col-6 {
+  margin-bottom: 2rem !important;
   padding: 0;
   left: 70px;
 }
@@ -563,6 +570,14 @@ body {
   width: 482px;
   background-color: #ae18e2;
 }
+.Register .container .row .col-6 .input2 {
+  position: absolute;
+  left: 0px !important;
+  top: 3rem !important;
+}
+.Register .container .row .col-6 {
+  margin-bottom: 2rem !important;
+}
 .Register .container .row .col-6 .gender {
   margin-top: 15px;
   width: 486px;
@@ -588,6 +603,11 @@ body {
 }
 .Register .container .row .col-6 .gender input[type=radio]:checked {
   background-color: #ae18e2;
+}
+.Register .container .row .col-6 .text-danger {
+  position: absolute;
+  left: 0px;
+  top: 4rem;
 }
 .Register .container .row .col-6 .btnSubmit {
   margin-top: 100px;

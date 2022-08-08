@@ -74,49 +74,84 @@
         <div class="row">
           <div class="col-6 mb-3">
             <div class="input-1">
-              <input type="text" class="form-control" placeholder="email" />
+              <input
+                id="email"
+                type="text"
+                class="form-control"
+                placeholder="email"
+              />
               <span>(*)</span>
             </div>
+            <p id="error_required_email" class="text text-danger input1"></p>
+            <p id="error_valid_email" class="text text-danger input1"></p>
           </div>
           <div class="col-6 mb-3">
             <div class="input-2">
-              <input type="text" class="form-control" placeholder="name" />
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="name"
+              />
               <span>(*)</span>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="input-1">
-              <input type="text" class="form-control" placeholder="password" />
-              <span>(*)</span>
-            </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="input-2">
-              <input type="text" class="form-control" placeholder="phone" />
-              <span>(*)</span>
-            </div>
+            <p id="error_required_name" class="text text-danger input2"></p>
+            <p id="error_valid_name" class="text text-danger input2"></p>
           </div>
           <div class="col-6 mb-3">
             <div class="input-1">
               <input
+                id="password"
+                type="text"
+                class="form-control"
+                placeholder="password"
+              />
+              <span>(*)</span>
+            </div>
+            <p id="error_required_password" class="text text-danger input1"></p>
+            <p id="error_valid_password" class="text text-danger input1"></p>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="input-2">
+              <input
+                id="phone"
+                type="text"
+                class="form-control"
+                placeholder="phone"
+              />
+              <span>(*)</span>
+            </div>
+            <p id="error_required_phone" class="text text-danger input2"></p>
+            <p id="error_valid_phone" class="text text-danger input2"></p>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="input-1">
+              <input
+                id="confirmPass"
                 type="text"
                 class="form-control"
                 placeholder="password confirm"
               />
               <span>(*)</span>
             </div>
+            <p
+              id="error_required_confirmPass"
+              class="text text-danger input1"
+            ></p>
+            <p id="error_valid_confirmPass" class="text text-danger input1"></p>
           </div>
           <div class="col-6">
             <div class="gender row">
               <p>Gender</p>
-              <input type="radio" name="gender" />
+              <input id="gender" type="radio" name="gender" value="Male" />
               <p>Male</p>
-              <input type="radio" name="gender" />
+              <input id="gender" type="radio" name="gender" value="Female" />
               <p>Female</p>
             </div>
-            <button class="btnSubmit">Submit</button>
+            <p id="error_required_gender" class="text text-danger"></p>
+            <p id="error_valid_gender" class="text text-danger"></p>
+            <button class="btnSubmit" id="btnSignUp">Submit</button>
           </div>
-
         </div>
       </div>
     </section>
@@ -140,5 +175,18 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!--AJAX LINK-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--LINK METHOD VALIDATION-->
+    <script src="../controller/method.js"></script>
+    <!--LINK USERINFO-->
+    <script src="../models/userInfo.js"></script>
+    <!--LINK REGISTER API-->
+    <script src="../controller/registerAjax.js"></script>
   </body>
 </html>

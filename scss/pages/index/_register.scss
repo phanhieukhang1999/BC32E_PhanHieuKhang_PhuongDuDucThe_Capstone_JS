@@ -97,6 +97,7 @@
     }
     .row {
       .col-6 {
+        margin-bottom: 2rem !important;
         padding: 0;
         .input-1 {
           position: absolute;
@@ -133,8 +134,14 @@
             background-color: #ae18e2;
           }
         }
+        .input1 {
+          position: absolute;
+          left: 50px !important;
+          top: 3rem !important;
+        }
       }
       .col-6 {
+        margin-bottom: 2rem !important;
         padding: 0;
         left: 70px;
         .input-2 {
@@ -174,8 +181,14 @@
             background-color: $bg-c1-violet;
           }
         }
+        .input2 {
+          position: absolute;
+          left: 0px !important;
+          top: 3rem !important;
+        }
       }
       .col-6 {
+        margin-bottom: 2rem !important;
         .gender {
           margin-top: 15px;
           width: 486px;
@@ -200,20 +213,25 @@
             }
           }
         }
+        .text-danger {
+          position: absolute;
+          left: 0px;
+          top: 4rem;
+        }
         .btnSubmit {
-            margin-top: 100px;
-            @include button(
-                $text-3xl,
-                $text-regular,
-                $text-c1-light,
-                $bg-c1-violet,
-                5px 80px,
-                none,
-                0,
-                $bg-c1-violet,
-                $text-c1-light,
-                none
-              );
+          margin-top: 100px;
+          @include button(
+            $text-3xl,
+            $text-regular,
+            $text-c1-light,
+            $bg-c1-violet,
+            5px 80px,
+            none,
+            0,
+            $bg-c1-violet,
+            $text-c1-light,
+            none
+          );
         }
       }
     }
