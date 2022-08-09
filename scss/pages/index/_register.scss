@@ -1,12 +1,13 @@
 @import "../../themes/variable";
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background-color: $bg-c1-primary;
   height: 50px;
   border: 1px solid #000;
-  margin-bottom: 50px;
-  z-index: 1;
+  margin-bottom: 150px;
+  z-index: 100;
   .container {
     .navbar {
       height: 50px;
@@ -89,9 +90,9 @@
 
 .Register {
   position: relative;
-  padding-top: 50px;
+  padding-top: 100px;
   background-color: #fffcfc;
-  height: 538px;
+  height: 600px;
   .container {
     .title {
     }
@@ -237,6 +238,43 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+    .Register {
+      .container {
+        .title {
+
+        }
+        .row {
+          .col-6 {
+            left: 25px;
+            .input-1 {
+              width: 400px;
+              &::after {
+                width: 400px;
+              }
+            }
+          }
+          .col-6 {
+            left: 25px;
+            .input-2 {
+              width: 400px;
+              &::after {
+                width: 400px;
+              }
+            }
+          }
+          .col-6 {
+            .gender {
+              width: 476px;
+            }
+          }
+        }
+      }
+    }
+}
+
+
 .footer {
   img {
     width: 100%;

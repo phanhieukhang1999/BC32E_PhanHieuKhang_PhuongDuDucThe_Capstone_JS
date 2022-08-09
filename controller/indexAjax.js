@@ -44,7 +44,7 @@ function renderSanPham(arrProduct) {
             </div>
             <div class="card-right">
               <a href="#">
-                <button class="btn-buy">
+                <button class="btn-price">
                   ${sp.price}$
                 </button>
               </a>
