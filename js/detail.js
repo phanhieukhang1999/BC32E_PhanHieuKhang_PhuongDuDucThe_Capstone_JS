@@ -1,8 +1,8 @@
 var arrSanPham = [];
-
+let id = 7;
 function layThongTinSanPhamApi() {
     var promise = axios({
-        url: 'https://shop.cyberlearn.vn/api/Product/getbyid?id=3',
+        url: 'https://shop.cyberlearn.vn/api/Product/getbyid?id=' + id,
         method: 'GET'
     });
     //Xử lý thành công
@@ -12,18 +12,37 @@ function layThongTinSanPhamApi() {
         var html = '';
         document.querySelector('#name').innerHTML = arrSanPham.name;
         document.querySelector('#description').innerHTML = arrSanPham.description;
-        document.querySelector('#price').innerHTML = arrSanPham.price;
+        document.querySelector('#price').innerHTML = arrSanPham.price + '$';
         document.querySelector('#quantity').value = Number(arrSanPham.quantity);
         document.querySelector('#image').src = arrSanPham.image;
         var sizeArray = arrSanPham.size;
         //tạo nút Size
         for (index = 0; index < sizeArray.length; index++) {
             html += `
-            <button style="display:flex; align-items:center;justify-content:center;" >
+            <button id="btnSize" style="display:flex; align-items:center;justify-content:center;"
+            onclick="pickSize()" >
                 <span>${sizeArray[index]}</span>
             </button>
             `;
         }
+
+        //thay đổi màu sắc khi click chọn size
+        pickSize = () => {
+        }
+
+        //thay đổi số lượng trên giỏ hàng
+        buyProduct = () => {
+            document.querySelector('#qtyBuy').innerHTML = "("+ document.querySelector('#quantity').value + ")";
+        }
+
+        //tạo chức năng nút cộng trừ số lượng
+        document.querySelector('#upQty').onclick = () => {
+            document.querySelector('#quantity').value = Number(document.querySelector('#quantity').value) + 1;
+        }
+        document.querySelector('#downQty').onclick = () => {
+            document.querySelector('#quantity').value = Number(document.querySelector('#quantity').value) - 1;
+        }
+
         document.querySelector('#btnSize').innerHTML = html;
         var relatedProduct = arrSanPham.relatedProducts;
         var relatePro = '';
@@ -53,7 +72,7 @@ function layThongTinSanPhamApi() {
             </div>
             `
         }
-        document.querySelector('.row').innerHTML = relatePro;
+        document.querySelector('.line1').innerHTML = relatePro;
     })
     //xử lý thất bại
     promise.catch(function (err) {
@@ -75,6 +94,6 @@ function renderSanPham(idSanPham) {
 window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('id');
-    console.log('params',myParam);
+    console.log('params', myParam);
     layThongTinSanPhamApi();
 }
