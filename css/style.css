@@ -110,7 +110,7 @@ body {
     z-index: 1;
     position: absolute;
     top: 50px;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 .carousel {
@@ -149,6 +149,7 @@ body {
 }
 .carousel #demo .carousel-inner .carousel-item .carousel-caption .title {
   text-align: left;
+  z-index: 1;
 }
 .carousel #demo .carousel-inner .carousel-item .carousel-caption .title .des-title {
   width: 291px;
@@ -178,6 +179,9 @@ body {
   background: rgba(0, 0, 0, 0);
   color: #f8b653;
   border: 2px solid #f8b653;
+}
+.carousel #demo .carousel-inner .carousel-item .carousel-caption .title .btn-buy:focus {
+  outline: none;
 }
 .carousel #demo .carousel-control-prev .carousel-control-prev-icon {
   background-image: url("../../../img/Polygon 2.png");
@@ -487,6 +491,9 @@ body {
   color: #fff;
   border: none;
 }
+.product .container .row .col-4 .card .card-footer .card-left a .btn-buy:focus {
+  outline: none;
+}
 .product .container .row .col-4 .card .card-footer .card-right {
   width: 50%;
   text-align: center;
@@ -507,6 +514,9 @@ body {
   background: #dedddc;
   color: none;
   border: none;
+}
+.product .container .row .col-4 .card .card-footer .card-right a .btn-price:not(:disabled) {
+  cursor: default;
 }
 
 @media screen and (max-width: 992px) {
@@ -753,7 +763,6 @@ body {
   background-color: #d9d9d9;
   cursor: pointer;
   margin: 0 10px 0 30px;
-  appearance: none;
 }
 .Register .container .row .col-6 .gender input[type=radio]:checked {
   background-color: #ae18e2;
@@ -801,6 +810,173 @@ body {
   }
   .Register .container .row .col-6 .gender {
     width: 476px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Register .container .row .col-6 {
+    left: 50px;
+  }
+  .Register .container .row .col-6 .input-1 {
+    width: 300px;
+  }
+  .Register .container .row .col-6 .input-1::after {
+    width: 300px;
+  }
+  .Register .container .row .col-6 {
+    left: 25px;
+  }
+  .Register .container .row .col-6 .input-2 {
+    width: 300px;
+  }
+  .Register .container .row .col-6 .input-2::after {
+    width: 300px;
+  }
+  .Register .container .row .col-6 .gender {
+    width: 360px;
+  }
+  .Register .container .row .col-6 .gender p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+  }
+  .Register .container .row .col-6 .gender input[type=radio] {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+  .Register .container .row .col-6 .btnSubmit {
+    padding: 5px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Register {
+    height: 700px;
+  }
+  .Register .container {
+    height: auto;
+  }
+  .Register .container .row {
+    width: 500px;
+    margin: auto;
+    flex-direction: column;
+  }
+  .Register .container .row .col-6.item-1 {
+    left: 5px;
+    width: auto;
+    padding-bottom: 35px;
+  }
+  .Register .container .row .col-6.item-1 .input-1 {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-1 .input-1::after {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-2 {
+    left: 55px;
+  }
+  .Register .container .row .col-6.item-2 .input-2 {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-2 .input-2::after {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-3 {
+    left: 5px;
+  }
+  .Register .container .row .col-6.item-3 .input-1 {
+    width: 400px;
+    position: absolute;
+    top: 60px;
+  }
+  .Register .container .row .col-6.item-3 .input-1::after {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-3 .text-danger.input1 {
+    top: 105px !important;
+    left: 50px !important;
+    width: 100%;
+  }
+  .Register .container .row .col-6.item-4 {
+    left: 5px;
+  }
+  .Register .container .row .col-6.item-4 .input-2 {
+    width: 400px;
+    position: absolute;
+    top: -40px;
+  }
+  .Register .container .row .col-6.item-4 .input-2::after {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-4 .text-danger.input2 {
+    top: 4px !important;
+    left: 50px !important;
+    width: 100%;
+  }
+  .Register .container .row .col-6.item-6 {
+    left: 70px;
+    bottom: -80px;
+  }
+  .Register .container .row .col-6.item-6 .gender {
+    flex-direction: row;
+  }
+  .Register .container .row .col-6.item-6 .text-danger {
+    top: 4rem;
+  }
+  .Register .container .row .col-6.item-6 .btnSubmit {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Register .container .row {
+    width: 400px;
+  }
+  .Register .container .row .col-6.item-1 {
+    left: -35px;
+  }
+  .Register .container .row .col-6.item-1 .input-1 {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-1 .input-1::after {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-1 .text-danger.input1 {
+    width: 100%;
+  }
+  .Register .container .row .col-6.item-2 {
+    left: 15px;
+  }
+  .Register .container .row .col-6.item-2 .input-2 {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-2 .input-2::after {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-3 {
+    left: -35px;
+  }
+  .Register .container .row .col-6.item-3 .input-1 {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-3 .input-1::after {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-3 .text-danger.input1 {
+    width: 102%;
+  }
+  .Register .container .row .col-6.item-4 {
+    left: -35px;
+  }
+  .Register .container .row .col-6.item-4 .input-2 {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-4 .input-2::after {
+    width: 350px;
+  }
+  .Register .container .row .col-6.item-4 .text-danger.input2 {
+    width: 120%;
+  }
+  .Register .container .row .col-6.item-6 {
+    left: 15px;
   }
 }
 .footer img {

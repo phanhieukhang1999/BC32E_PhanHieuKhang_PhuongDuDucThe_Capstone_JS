@@ -101,7 +101,7 @@
           z-index: 1;
           position: absolute;
           top: 50px;
-          opacity: 0.8;
+          opacity: 0.9;
         }
       }
     }
@@ -151,6 +151,7 @@
           }
           .title {
             text-align: left;
+            z-index: 1;
             .des-title {
               width: 291px;
               height: 51px;
@@ -174,6 +175,9 @@
                 $text-c1-orange,
                 2px solid #f8b653
               );
+              &:focus {
+                outline: none;
+              }
             }
           }
         }
@@ -602,6 +606,9 @@
                     $text-c1-light,
                     none
                   );
+                  &:focus {
+                    outline: none;
+                  }
                 }
               }
             }
@@ -624,6 +631,9 @@
                     none,
                     none
                   );
+                  &:not(:disabled) {
+                    cursor: default;
+                  }
                 }
               }
             }
