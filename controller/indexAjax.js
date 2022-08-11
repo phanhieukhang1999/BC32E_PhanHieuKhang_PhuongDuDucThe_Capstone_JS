@@ -1,31 +1,31 @@
 function layThongTinSanPham() {
-    var promise = axios({
-        url: 'https://shop.cyberlearn.vn/api/Product',
-        //Đường dẫn backend cung cấp
-        method: 'GET',
-        ResponseType: JSON
-    })
-    //xử lý thành công
-    promise.then(function (result) {
-        console.log(result.data.content);
-        renderSanPham(result.data.content);
-    })
-    //Xử lý thất bại
-    promise.catch(function (err) {
+  var promise = axios({
+    url: 'https://shop.cyberlearn.vn/api/Product',
+    //Đường dẫn backend cung cấp
+    method: 'GET',
+    ResponseType: JSON
+  })
+  //xử lý thành công
+  promise.then(function (result) {
+    console.log(result.data.content);
+    renderSanPham(result.data.content);
+  })
+  //Xử lý thất bại
+  promise.catch(function (err) {
 
-    });
+  });
 }
 
 //Gọi hàm lấy dữ liêu từ server khi trang web vừa load xong
 window.onload = function () {
-    layThongTinSanPham();
+  layThongTinSanPham();
 }
 
 function renderSanPham(arrProduct) {
-    var html = '';
-    for (var i = 0; i < arrProduct.length; i++) {
-        var sp = arrProduct[i];
-        html += `
+  var html = '';
+  for (var i = 0; i < arrProduct.length; i++) {
+    var sp = arrProduct[i];
+    html += `
         <div class="col-4">
         <div class="card">
           <img class="card-img-top" src="${sp.image}" alt="" />
@@ -36,7 +36,7 @@ function renderSanPham(arrProduct) {
           </div>
           <div class="card-footer">
             <div class="card-left">
-              <a href="#">
+              <a href="./views/detail.html?id=${sp.id}" >
                 <button class="btn-buy">
                   Buy now
                 </button>
@@ -44,7 +44,7 @@ function renderSanPham(arrProduct) {
             </div>
             <div class="card-right">
               <a href="#">
-                <button class="btn-price">
+                <button class="btn-price ">
                   ${sp.price}$
                 </button>
               </a>
@@ -55,6 +55,6 @@ function renderSanPham(arrProduct) {
       </div>
         
         `;
-    }
-    document.querySelector('.row').innerHTML = html
+  }
+  document.querySelector('.row').innerHTML = html
 }

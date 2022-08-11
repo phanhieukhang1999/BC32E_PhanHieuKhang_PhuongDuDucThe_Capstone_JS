@@ -39,7 +39,7 @@ function renderThongTinNguoiDung(user) {
 
     //---------------KIEM TRA ĐỊNH DẠNG------------
     //kiểm tra EMAIL
-    valid = kiemTraEmail(user.email, '#error_valid_email', 'Your input format should be: ')
+    valid = kiemTraEmail(user.email, '#error_valid_email', '')
     //kiểm tra PASSWORD
     if (user.password == '') {
         document.querySelector('#error_valid_password').style.display = "none"

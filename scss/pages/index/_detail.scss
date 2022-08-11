@@ -1,0 +1,566 @@
+@import "./../../themes/detailVariable";
+@import "../../base/components/components";
+
+//nesting
+header {
+  background-color: $bg-transparent;
+  height: 50px;
+  border: 1px solid #000000;
+
+  .container {
+    position: relative;
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 50px;
+
+      .header-left {
+        position: absolute;
+        @include header-box(10px, 8px, 24px, 116px, 32px);
+
+        #logo {
+          img {
+          }
+        }
+      }
+
+      .header-right {
+        display: flex;
+        position: absolute;
+        @include header-box(7px, 7px, 70%, 100px, 50px);
+
+        .bar {
+          position: relative;
+
+          #buy {
+            // position: absolute;
+            @include header-box(0, 0, 0, 31px, 31px);
+            display: flex;
+            align-items: center;
+          }
+
+          #qty {
+            text-decoration: none;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            @include header-box(0px, 5px, 31px, 35px, 36px);
+
+            span {
+              @include text(20px, $text-light, $text-c1-light);
+            }
+          }
+
+          #login {
+            text-decoration: none;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            @include header-box(0px, 0px, 81px, 90px, 32px);
+
+            &:hover {
+              span {
+                color: $text-c4-primary;
+              }
+            }
+
+            span {
+              @include text($text-base, $text-light, $text-c2-primary);
+              line-height: 19.36px;
+            }
+          }
+
+          #register {
+            position: absolute;
+            text-decoration: none;
+            @include header-box(0px, 0px, 148px, 90px, 32px);
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              span {
+                color: $text-c4-primary;
+              }
+            }
+
+            span {
+              @include text($text-base, $text-light, $text-c2-primary);
+              line-height: 19.36px;
+            }
+          }
+        }
+      }
+    }
+
+    .menu {
+      position: absolute;
+      @include header-box(50px, 0px, 0px, 100%, 75px);
+      height: 50px;
+
+      .menu-inner {
+        position: relative;
+
+        #active {
+          position: absolute;
+          @include header-box(16px, 0px, 25px, 56px, 24px);
+          text-decoration: none;
+
+          span {
+            @include text($text-2xl, $text-regular, $text-c1-dark);
+            border-bottom: 3px solid $text-c1-dark;
+            position: relative;
+
+            &:hover {
+              color: $text-c1-primary;
+            }
+
+            @include header-hover($text-c1-primary, $bg-c1-primary);
+          }
+        }
+
+        #men {
+          position: absolute;
+          @include header-box(16px, 0px, 105px, 41px, 24px);
+          text-decoration: none;
+
+          span {
+            @include text($text-2xl, $text-regular, $text-c1-dark);
+            position: relative;
+
+            &:hover {
+              color: $text-c1-primary;
+            }
+
+            @include header-hover($text-c1-primary, $bg-c1-primary);
+          }
+        }
+
+        #woman {
+          position: absolute;
+          @include header-box(16px, 0px, 183px, 70px, 24px);
+          text-decoration: none;
+
+          span {
+            @include text($text-2xl, $text-regular, $text-c1-dark);
+            position: relative;
+
+            &:hover {
+              color: $text-c1-primary;
+            }
+
+            @include header-hover($text-c1-primary, $bg-c1-primary);
+          }
+        }
+
+        #kid {
+          position: absolute;
+          @include header-box(16px, 0px, 292px, 31px, 24px);
+          text-decoration: none;
+
+          span {
+            @include text($text-2xl, $text-regular, $text-c1-dark);
+            position: relative;
+
+            &:hover {
+              color: $text-c1-primary;
+            }
+
+            @include header-hover($text-c1-primary, $bg-c1-primary);
+          }
+        }
+
+        #sport {
+          position: absolute;
+          @include header-box(16px, 0px, 363px, 52px, 24px);
+          text-decoration: none;
+
+          span {
+            @include text($text-2xl, $text-regular, $text-c1-dark);
+            position: relative;
+
+            &:hover {
+              color: $text-c1-primary;
+            }
+
+            @include header-hover($text-c1-primary, $bg-c1-primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-detail {
+  height: 530px;
+  margin-top: 50px;
+  position: relative;
+
+  .detail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+
+    .detail-left {
+      position: absolute;
+      @include header-box(58px, 117px, 65px, 334px, 355px);
+      background-color: $bg-c1-img;
+
+      .img-frame {
+        position: relative;
+
+        img {
+          position: absolute;
+          @include header-box(109px, 90px, 57px, 220px, 190px);
+        }
+      }
+    }
+
+    .detail-right {
+      .title {
+        @include header-box(67px, 427px, 527px, 500px, 50px);
+        position: absolute;
+
+        p {
+          @include text($text-3xl, $text-regular, $text-c1-dark);
+          line-height: 36.31px;
+        }
+      }
+
+      p.des {
+        position: absolute;
+        @include header-box(112px, 328px, 527px, 503px, 90px);
+        @include text($text-base, $text-regular, $text-c3-primary);
+      }
+
+      .size {
+        p {
+          position: absolute;
+          @include header-box(202px, 270px, 527px, 162px, 58px);
+          line-height: 29.05px;
+          padding-top: 10px;
+          @include text($text-med, $text-semibold, $text-c4-primary);
+        }
+
+        .option {
+          position: absolute;
+          display: flex;
+          @include header-box(261px, 240px, 536px, 400px, 29px);
+
+          button {
+            margin-right: 22px;
+            width: 50px;
+            height: 50px;
+            transition: all 0.5s ease;
+            @include button(
+              $text-med,
+              $text-bold,
+              $text-c5-primary,
+              $bg-c1-gray,
+              10px,
+              $bd-none,
+              none,
+              $bg-c1-primary,
+              $text-c1-light,
+              $bd-none
+            );
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          .option {
+            width: 200px;
+          }
+        }
+      }
+
+      #price {
+        position: absolute;
+        @include header-box(317px, 166px, 527px, 113px, 47px);
+        @include text($text-3xl, $text-bold, $text-c6-primary);
+      }
+
+      .group-input {
+        button.up {
+          position: absolute;
+          @include header-box(370px, 110px, 527px, 50px, 50px);
+          background: $bg-c1-number;
+          border: $bd-none;
+          @include text($text-3xl, $text-regular, $text-c7-primary);
+        }
+
+        input {
+          position: absolute;
+          border: none;
+          @include header-box(377px, 117px, 590px, 80px, 36px);
+          @include text($text-3xl, $text-semibold, $text-c1-dark);
+          text-align: center;
+        }
+
+        button.down {
+          position: absolute;
+          @include header-box(370px, 110px, 680px, 50px, 50px);
+          background: $bg-c1-number;
+          border: $bd-none;
+          @include text($text-3xl, $text-regular, $text-c7-primary);
+        }
+      }
+
+      .group-button {
+        position: absolute;
+        @include header-box(427px, 39px, 527px, 175px, 64px);
+
+        button {
+          width: 92%;
+          @include button(
+            $text-med,
+            $text-semibold,
+            $text-c8-primary,
+            $bg-c1-buy,
+            18px 9px 16px 9px,
+            $bd-none,
+            none,
+            $bg-c1-primary,
+            $text-c1-light,
+            $bd-none
+          );
+        }
+      }
+    }
+  }
+}
+
+.related-product {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: $bg-c1-page;
+
+  .container {
+    .title {
+      p {
+        text-align: center;
+        @include text($text-4xl, $text-regular, $text-c1-dark);
+      }
+    }
+
+    .line1 {
+      // position: absolute;
+      // top: 153px;
+      // left: 99px;
+      padding-bottom: 106px;
+      align-items: center;
+      justify-content: end;
+
+      .cell {
+        width: 334px;
+        margin-right: 3.75rem;
+        padding: 0;
+        position: relative;
+
+        // &.item1 {
+        //     margin-right: 60px;
+        // }
+
+        // &.item2 {
+        //     margin-right: 87px;
+        // }
+
+        .card-top {
+          height: 410px;
+          background-color: $bg-c1-img;
+
+          img {
+            position: absolute;
+            @include header-box(45px, 168px, 57px, 220px, 185px);
+          }
+
+          #name {
+            position: absolute;
+            @include header-box(231px, 109px, 23px, 90%, 29px);
+            @include text($text-med, $text-light, $text-c1-dark);
+          }
+
+          #shortDescription {
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            position: absolute;
+            @include header-box(268px, 77px, 23px, 90%, 29px);
+            @include text($text-2xl, $text-light, $text-c9-primary);
+          }
+        }
+
+        .card-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .cell-left {
+            width: 50%;
+            background-color: $bg-card-left;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+              text-decoration: none;
+
+              button {
+                background: transparent;
+                border: none;
+                @include button(
+                  $text-med,
+                  $text-bold,
+                  $text-c5-primary,
+                  $bg-none,
+                  10px,
+                  $bd-none,
+                  none,
+                  $bg-none,
+                  $text-c1-light,
+                  $bd-none
+                );
+              }
+            }
+          }
+
+          .cell-right {
+            width: 50%;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $bg-card-right;
+
+            span {
+              @include text($text-med, $text-bold, $text-c1-dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.footer-info {
+  .footer-inner {
+    .top-line {
+      padding: 25px 0;
+      margin: auto;
+      justify-content: space-around;
+      background-color: #fafafa;
+
+      .col-3 {
+        ul {
+          border-right: 1.5px solid $bg-card-right;
+
+          h5 {
+            @include text($text-2xl, $text-bold, $text-c1-dark);
+          }
+
+          li {
+            list-style: none;
+          }
+        }
+      }
+
+      .col-3 {
+        h5 {
+          @include text($text-2xl, $text-bold, $text-c1-dark);
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        a {
+          text-decoration: none;
+          @include text($text-xs, $text-base, #db928e);
+
+          &:hover {
+            color: $text-c4-primary;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+
+    .bottom-line {
+      justify-content: space-around;
+      padding: 25px 0;
+      margin: auto;
+      background-color: #ececec;
+
+      .col-3 {
+        ul {
+          border-right: 1.5px solid $bg-card-right;
+
+          h5 {
+            @include text($text-2xl, $text-bold, $text-c1-dark);
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+
+          a {
+            text-decoration: none;
+            @include text($text-xs, $text-base, #db928e);
+
+            &:hover {
+              color: $text-c4-primary;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+
+      .col-3 {
+        h5 {
+          @include text($text-2xl, $text-bold, $text-c1-dark);
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        a {
+          text-decoration: none;
+          @include text($text-xs, $text-base, #db928e);
+
+          &:hover {
+            color: $text-c4-primary;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      position: fixed;
+      bottom: 60px;
+      right: 60px;
+      display: block;
+      z-index: 99;
+
+      &:hover {
+        span {
+          color: $text-c1-primary;
+        }
+      }
+
+      span {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        color: $text-c9-primary;
+      }
+    }
+  }
+}
