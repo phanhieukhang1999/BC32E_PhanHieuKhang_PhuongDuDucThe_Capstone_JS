@@ -12,6 +12,12 @@
   padding: 0 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 /*-----text: css cho text ---------*/
 /*-----text: css cho text ---------*/
 /*-----text: css cho text ---------*/
