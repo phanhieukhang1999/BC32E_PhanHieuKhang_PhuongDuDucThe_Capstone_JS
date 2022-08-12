@@ -1,0 +1,464 @@
+@import "../../themes/variable";
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: $bg-c1-primary;
+  height: 50px;
+  border: 1px solid #000;
+  margin-bottom: 150px;
+  z-index: 100;
+  .container {
+    .navbar {
+      height: 50px;
+      img {
+      }
+      nav {
+        .cart {
+          text-decoration: none;
+          img {
+            width: 31px;
+            height: 31px;
+          }
+          span {
+            @include text($text-2xl, $text-light, $text-c1-light);
+            line-height: 36.31px;
+          }
+        }
+        .soLuong {
+        }
+        .login {
+          text-decoration: none;
+
+          @include text($text-base, $text-light, $text-c2-light);
+        }
+        .register {
+          text-decoration: none;
+
+          @include text($text-base, $text-light, $text-c2-light);
+        }
+      }
+    }
+    nav {
+      .navbar-nav {
+        .nav-item {
+          margin-right: 20px;
+          .nav-link {
+            @include text($text-2xl, $text-light, $text-c1-primary);
+            opacity: 0.7;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 100%;
+              background-color: $bg-c1-primary;
+              bottom: -3px;
+              left: 0;
+              transform: scale(0, 1);
+              transition: transform 0.3s;
+            }
+
+            &:hover {
+              opacity: 1;
+              @include text($text-2xl, $text-regular, $text-c1-primary);
+              &::before {
+                transform: scale(1, 1);
+              }
+            }
+          }
+        }
+        .nav-item.active {
+          &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 72px;
+            background-color: $bg-c1-primary;
+            bottom: -1px;
+            // left: 0;
+          }
+          .nav-link {
+            @include text($text-2xl, $text-regular, $text-c1-primary);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Register {
+  position: relative;
+  padding-top: 100px;
+  background-color: #fffcfc;
+  height: 600px;
+  .container {
+    .title {
+    }
+    .row {
+      .col-6 {
+        margin-bottom: 2rem !important;
+        padding: 0;
+        .input-1 {
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+          width: 482px;
+          left: 50px;
+          .form-control {
+            border: none;
+            padding: 0;
+            margin-bottom: 5px;
+            background-color: $bg-transparent;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+            &::placeholder {
+              @include text($text-3xl, $text-regular, $text-c1-primary);
+              opacity: 1;
+            }
+          }
+          span {
+            // position: absolute;
+            @include text($text-2xl, $text-regular, $text-c1-red);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 5px;
+            width: 482px;
+            background-color: #ae18e2;
+          }
+        }
+        .input1 {
+          position: absolute;
+          left: 50px !important;
+          top: 3rem !important;
+        }
+      }
+      .col-6 {
+        margin-bottom: 2rem !important;
+        padding: 0;
+        left: 70px;
+        .input-2 {
+          // position: absolute;
+          display: flex;
+          justify-content: space-between;
+          width: 482px;
+          left: 50px;
+          padding: 0;
+          .form-control {
+            padding: 0;
+            margin-bottom: 5px;
+            background-color: $bg-transparent;
+
+            border: none;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+            &::placeholder {
+              @include text($text-3xl, $text-regular, $text-c1-primary);
+              opacity: 1;
+            }
+          }
+          span {
+            // position: absolute;
+            @include text($text-2xl, $text-regular, $text-c1-red);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 5px;
+            width: 482px;
+            background-color: $bg-c1-violet;
+          }
+        }
+        .input2 {
+          position: absolute;
+          left: 0px !important;
+          top: 3rem !important;
+        }
+      }
+      .col-6 {
+        margin-bottom: 2rem !important;
+        .gender {
+          margin-top: 15px;
+          width: 486px;
+          justify-content: space-between;
+          p {
+            @include text($text-3xl, $text-regular, $text-c1-primary);
+          }
+          input[type="radio"] {
+            appearance: none;
+            display: inline-block;
+            width: 65px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 0;
+            border: 10px solid #d9d9d9;
+            background-color: #d9d9d9;
+            cursor: pointer;
+            margin: 0 10px 0 30px;
+
+            &:checked {
+              background-color: $bg-c1-violet;
+            }
+          }
+        }
+        .text-danger {
+          position: absolute;
+          left: 0px;
+          top: 4rem;
+        }
+        .btnSubmit {
+          margin-top: 100px;
+          @include button(
+            $text-3xl,
+            $text-regular,
+            $text-c1-light,
+            $bg-c1-violet,
+            5px 80px,
+            none,
+            0,
+            $bg-c1-violet,
+            $text-c1-light,
+            none
+          );
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Register {
+    .container {
+      .title {
+      }
+      .row {
+        .col-6 {
+          left: 25px;
+          .input-1 {
+            width: 400px;
+            &::after {
+              width: 400px;
+            }
+          }
+        }
+        .col-6 {
+          left: 25px;
+          .input-2 {
+            width: 400px;
+            &::after {
+              width: 400px;
+            }
+          }
+        }
+        .col-6 {
+          .gender {
+            width: 476px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .Register {
+    .container {
+      .title {
+      }
+      .row {
+        .col-6 {
+          left: 50px;
+          .input-1 {
+            width: 300px;
+            &::after {
+              width: 300px;
+            }
+          }
+        }
+        .col-6 {
+          left: 25px;
+          .input-2 {
+            width: 300px;
+            &::after {
+              width: 300px;
+            }
+          }
+        }
+        .col-6 {
+          .gender {
+            width: 360px;
+            p {
+              @include text($text-2xl-4, $text-regular, $text-c1-primary);
+            }
+            input[type="radio"] {
+              width: 40px;
+              height: 40px;
+              margin: 0;
+            }
+          }
+          .btnSubmit {
+            padding: 5px 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Register {
+    height: 700px;
+    .container {
+      height: auto;
+      .row {
+        width: 500px;
+        margin: auto;
+        flex-direction: column;
+        .col-6.item-1 {
+          left: 5px;
+          width: auto;
+          padding-bottom: 35px;
+          .input-1 {
+            width: 400px;
+            &::after {
+              width: 400px;
+            }
+          }
+        }
+        .col-6.item-2 {
+          left: 55px;
+          .input-2 {
+            width: 400px;
+            &::after {
+              width: 400px;
+            }
+          }
+        }
+        .col-6.item-3 {
+          left: 5px;
+          .input-1 {
+            width: 400px;
+            position: absolute;
+            top: 60px;
+            &::after {
+              width: 400px;
+            }
+          }
+          .text-danger.input1 {
+            top: 105px !important;
+            left: 50px !important;
+            width: 100%;
+          }
+        }
+        .col-6.item-4 {
+          left: 5px;
+          .input-2 {
+            width: 400px;
+            position: absolute;
+            top: -40px;
+            &::after {
+              width: 400px;
+            }
+          }
+          .text-danger.input2 {
+            top: 4px !important;
+            left: 50px !important;
+            width: 100%;
+          }
+        }
+        .col-6.item-6 {
+          left: 70px;
+          bottom: -80px;
+          .gender {
+            // margin-top: 100px;
+            flex-direction: row;
+          }
+          .text-danger {
+            top: 4rem;
+          }
+          .btnSubmit {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .Register {
+    .container {
+      .row {
+        width: 400px;
+        .col-6.item-1 {
+          left: -35px;
+          .input-1 {
+            width: 350px;
+            &::after {
+              width: 350px;
+            }
+          }
+          .text-danger.input1 {
+            width: 100%;
+          }
+        }
+        .col-6.item-2 {
+          left: 15px;
+          .input-2 {
+            width: 350px;
+            &::after {
+              width: 350px;
+            }
+          }
+        }
+        .col-6.item-3 {
+          left: -35px;
+          .input-1 {
+            width: 350px;
+            &::after {
+              width: 350px;
+            }
+          }
+          .text-danger.input1 {
+            width: 102%;
+          }
+        }
+        .col-6.item-4 {
+          left: -35px;
+          .input-2 {
+            width: 350px;
+            &::after {
+              width: 350px;
+            }
+          }
+          .text-danger.input2 {
+            width: 120%;
+          }
+        }
+        .col-6.item-6 {
+          left: 15px;
+          // margin-top: 25px;
+          .gender {
+            // margin-top: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  img {
+    width: 100%;
+  }
+}

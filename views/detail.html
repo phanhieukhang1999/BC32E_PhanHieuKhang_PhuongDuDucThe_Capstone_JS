@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shoes Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <!--FONT STYLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--MAIN DETAIL CSS-->
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+
+  <body>
+    
+      <header class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="header-left">
+              <a id="logo" href="../index.html">
+                <img src="../img/image 3.png" alt="" width="116" height="32" />
+              </a>
+            </div>
+            <nav class="header-right">
+              <div class="bar">
+                <a href="#" id="buy">
+                  <img src="../img/image 8.png" alt="" />
+                </a>
+                <a href="#" id="qty">
+                  <span id="qtyBuy"> (1) </span>
+                </a>
+                <a href="#" id="login">
+                  <span>Login</span>
+                </a>
+                <a href="./register.html" id="register">
+                  <span>Register</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="menu">
+            <div class="menu-inner">
+              <a href="../index.html" id="active">
+                <span>Home</span>
+              </a>
+              <a href="#" id="men">
+                <span>Men</span>
+              </a>
+              <a href="#" id="woman">
+                <span>Woman</span>
+              </a>
+              <a href="#" id="kid">
+                <span>Kid</span>
+              </a>
+              <a href="#" id="sport">
+                <span>Sport</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="product-detail">
+        <div class="container">
+          <div class="detail-wrapper row">
+            <div class="detail-left col-3">
+              <div class="img-frame">
+                <img
+                  id="image"
+                  src="../img/image 5.png"
+                  alt=""
+                  width="220"
+                  height="156"
+                />
+              </div>
+            </div>
+            <div class="detail-right">
+              <div class="title">
+                <p id="name">Product Name</p>
+              </div>
+              <p class="des" id="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                pariatur sequi esse ducimus veritatis aspernatur totam inventore,
+                tempore rem impedit illum qui a quae aperiam officiis, error
+                repellat sunt nulla!
+              </p>
+              <div class="size">
+                <p>Available size</p>
+                <div class="option" id="btnSize">
+                  <button>
+                    <span id="size-0"></span>
+                  </button>
+                  <button>
+                    <span id="size-1"></span>
+                  </button>
+                  <button>
+                    <span id="size-2"></span>
+                  </button>
+                  <button>
+                    <span id="size-3"></span>
+                  </button>
+                  <button>
+                    <span id="size-4"></span>
+                  </button>
+                  <button>
+                    <span id="size-5"></span>
+                  </button>
+                  <button>
+                    <span id="size-6"></span>
+                  </button>
+                </div>
+              </div>
+              <p id="price">85</p>
+              <div class="group-input">
+                <button id="upQty" class="disable up">+</button>
+                <input type="text" class="input" id="quantity" />
+                <button id="downQty" class="down">-</button>
+              </div>
+              <div class="group-button">
+                <button id="btnCart" onclick="buyProduct()">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="related-product">
+        <div class="container">
+          <div class="title">
+            <p>-Related Product-</p>
+          </div>
+          <div class="row line1">
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="image"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="180"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom" style="display: flex">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="image"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="156"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="price"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="156"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="image"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="156"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="image"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="156"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="cell-wrapper">
+                <div class="card-top">
+                  <img
+                    id="image"
+                    src="../img/image 5.png"
+                    alt=""
+                    width="220"
+                    height="156"
+                  />
+                  <p id="name">Adidas Prophere</p>
+                  <p id="shortDescription">Short Description</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="cell-left">
+                    <a href="#">
+                      <button>
+                        <span> Buy now </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="cell-right">
+                    <span id="price">85</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-info">
+        <div class="footer-inner">
+          <div class="row top-line">
+            <div class="col-3">
+              <ul>
+                <h5>GET HELP</h5>
+                <li>Contact us</li>
+                <li>Shopping</li>
+                <li>NIKEid</li>
+                <li>Nike+</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <h5>ORDERS</h5>
+                <li>Payment options</li>
+                <li>Shipping and Delivery</li>
+                <li>Returns</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h5>REGISTER</h5>
+              <p>
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity
+              </p>
+              <a href="#">
+                <span>Learn more</span>
+              </a>
+            </div>
+          </div>
+          <div class="row bottom-line">
+            <div class="col-3">
+              <ul>
+                <h5>EMAIL SIGN UP</h5>
+                <p>
+                  Be the first to know about new products and special offers.
+                </p>
+                <a href="#">
+                  <span>Sign up now</span>
+                </a>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <h5>GIFT CARDS</h5>
+                <p>Give the gift that always fit</p>
+                <a href="#">
+                  <span>View Cards</span>
+                </a>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h5>STORES NEAR YOU</h5>
+              <p>Locate a Nike retail store or authorized retailer.</p>
+              <a href="#">
+                <span>Search</span>
+              </a>
+            </div>
+          </div>
+          <button
+            id="moveToTop"
+            onclick="topFunction()"
+            id="myBtn"
+            title="Go to top"
+          >
+            <span class="fa fa-chevron-up" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--AJAX LINK-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 40 ||
+          document.documentElement.scrollTop > 40
+        ) {
+          document.getElementById("moveToTop").style.display = "block";
+        } else {
+          document.getElementById("moveToTop").style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        console.log('123');
+        window.scroll({ top: 0, behavior: "smooth" });
+
+      }
+    </script>
+    <!--MODEL JAVASCRIPT FILE-->
+    <script src="../models/product.js"></script>
+    <!--MAIN JAVASCRIPT FILE-->
+    <script src="../controller/detail.js"></script>
+  </body>
+</html>
