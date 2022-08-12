@@ -23,19 +23,30 @@
           span {
             @include text($text-2xl, $text-light, $text-c1-light);
             line-height: 36.31px;
+            &:hover {
+              color: $text-c1-orange;
+
+            }
           }
         }
         .soLuong {
         }
         .login {
-          text-decoration: none;
+          text-decoration: none;  
 
           @include text($text-base, $text-light, $text-c2-light);
+          &:hover {
+           color: $text-c1-orange;
+          }
         }
         .register {
           text-decoration: none;
 
           @include text($text-base, $text-light, $text-c2-light);
+          &:hover {
+            color: $text-c1-orange;
+
+          }
         }
       }
     }

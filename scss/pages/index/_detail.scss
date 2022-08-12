@@ -232,7 +232,7 @@ header {
 
       p.des {
         position: absolute;
-        @include header-box(112px, 328px, 527px, 503px, 90px);
+        @include header-box(112px, 328px, 527px, auto, 90px);
         @include text($text-base, $text-regular, $text-c3-primary);
       }
 
@@ -267,11 +267,6 @@ header {
               $text-c1-light,
               $bd-none
             );
-          }
-        }
-        @media screen and (max-width: 1024px) {
-          .option {
-            width: 200px;
           }
         }
       }
@@ -326,6 +321,105 @@ header {
             $text-c1-light,
             $bd-none
           );
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .product-detail {
+    height: 800px;
+    .container {
+      .detail-wrapper {
+        .detail-left {
+          top: 60px;
+          left: 270px;
+          width: 400px;
+          height: 320px;
+          .img-frame {
+            img {
+              top: 70px;
+            }
+          }
+        }
+        .detail-right {
+          position: absolute;
+          top: 330px;
+          left: -430px;
+          p.des {
+            width: 450px;
+          }
+          .group-button {
+            left: 760px;
+            top: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-detail {
+    height: 800px;
+    .container {
+      .detail-wrapper {
+        .detail-left {
+          top: 60px;
+          left: 160px;
+          width: 400px;
+          height: 320px;
+          .img-frame {
+            img {
+              top: 70px;
+            }
+          }
+        }
+        .detail-right {
+          position: absolute;
+          top: 330px;
+          left: -430px;
+          p.des {
+            width: 450px;
+          }
+          .group-button {
+            left: 760px;
+            top: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .product-detail {
+    height: 800px;
+    .container {
+      .detail-wrapper {
+        .detail-left {
+          top: 60px;
+          left: 80px;
+          width: 400px;
+          height: 280px;
+          .img-frame {
+            img {
+              top: 70px;
+            }
+          }
+        }
+        .detail-right {
+          position: absolute;
+          top: 330px;
+          left: -500px;
+          p.des {
+            width: 450px;
+          }
+          .group-button {
+            left: 760px;
+            top: 350px;
+          }
         }
       }
     }
@@ -440,6 +534,18 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .related-product {
+    .container {
+      .title {
+      }
+      .line1 {
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

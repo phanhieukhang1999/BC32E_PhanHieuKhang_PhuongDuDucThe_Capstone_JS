@@ -43,17 +43,26 @@ body {
   color: #fff;
   line-height: 36.31px;
 }
+.header .container .navbar nav .cart span:hover {
+  color: #f8b653;
+}
 .header .container .navbar nav .login {
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #f6f6f6;
 }
+.header .container .navbar nav .login:hover {
+  color: #f8b653;
+}
 .header .container .navbar nav .register {
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   color: #f6f6f6;
+}
+.header .container .navbar nav .register:hover {
+  color: #f8b653;
 }
 .header .container nav .navbar-nav .nav-item {
   margin-right: 20px;
@@ -895,7 +904,7 @@ header .container .menu .menu-inner #sport span:hover::before {
   top: 112px;
   bottom: 328px;
   left: 527px;
-  width: 503px;
+  width: auto;
   height: 90px;
   font-size: 16px;
   font-weight: 400;
@@ -941,11 +950,6 @@ header .container .menu .menu-inner #sport span:hover::before {
   background: #b61984;
   color: #fff;
   border: none;
-}
-@media screen and (max-width: 1024px) {
-  .product-detail .detail-wrapper .detail-right .size .option {
-    width: 200px;
-  }
 }
 .product-detail .detail-wrapper .detail-right #price {
   position: absolute;
@@ -1022,6 +1026,84 @@ header .container .menu .menu-inner #sport span:hover::before {
   border: none;
 }
 
+@media screen and (max-width: 992px) {
+  .product-detail {
+    height: 800px;
+  }
+  .product-detail .container .detail-wrapper .detail-left {
+    top: 60px;
+    left: 270px;
+    width: 400px;
+    height: 320px;
+  }
+  .product-detail .container .detail-wrapper .detail-left .img-frame img {
+    top: 70px;
+  }
+  .product-detail .container .detail-wrapper .detail-right {
+    position: absolute;
+    top: 330px;
+    left: -430px;
+  }
+  .product-detail .container .detail-wrapper .detail-right p.des {
+    width: 450px;
+  }
+  .product-detail .container .detail-wrapper .detail-right .group-button {
+    left: 760px;
+    top: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-detail {
+    height: 800px;
+  }
+  .product-detail .container .detail-wrapper .detail-left {
+    top: 60px;
+    left: 160px;
+    width: 400px;
+    height: 320px;
+  }
+  .product-detail .container .detail-wrapper .detail-left .img-frame img {
+    top: 70px;
+  }
+  .product-detail .container .detail-wrapper .detail-right {
+    position: absolute;
+    top: 330px;
+    left: -430px;
+  }
+  .product-detail .container .detail-wrapper .detail-right p.des {
+    width: 450px;
+  }
+  .product-detail .container .detail-wrapper .detail-right .group-button {
+    left: 760px;
+    top: 350px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product-detail {
+    height: 800px;
+  }
+  .product-detail .container .detail-wrapper .detail-left {
+    top: 60px;
+    left: 80px;
+    width: 400px;
+    height: 280px;
+  }
+  .product-detail .container .detail-wrapper .detail-left .img-frame img {
+    top: 70px;
+  }
+  .product-detail .container .detail-wrapper .detail-right {
+    position: absolute;
+    top: 330px;
+    left: -500px;
+  }
+  .product-detail .container .detail-wrapper .detail-right p.des {
+    width: 450px;
+  }
+  .product-detail .container .detail-wrapper .detail-right .group-button {
+    left: 760px;
+    top: 350px;
+  }
+}
 .related-product {
   position: relative;
   display: flex;
@@ -1128,6 +1210,12 @@ header .container .menu .menu-inner #sport span:hover::before {
   color: #000;
 }
 
+@media screen and (max-width: 768px) {
+  .related-product .container .line1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 section.footer-info .footer-inner .top-line {
   padding: 25px 0;
   margin: auto;
